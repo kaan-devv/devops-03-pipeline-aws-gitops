@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: devops-03-pipeline-cd-deployment
 spec:
-  replicas: 5
+  replicas: 4
   selector:
     matchLabels:
       app: devops-03-pipeline-cd
@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: devops-03-pipeline-cd
-          image: kaanylmz/devops-03-pipeline-aws:1.0.41
+          image: kaan-devv/devops-03-pipeline-aws:1.0.41
           resources:
             limits:
               memory: "256Mi"
